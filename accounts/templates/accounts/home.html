@@ -27,6 +27,8 @@
         margin-bottom: 2rem; 
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     ">Empowering you to master your skills, manage courses, and achieve your career goals.</p>
+
+
             {% if request.user.profile %}
             <a class="btn btn-primary btn-lg animate__animated animate__zoomIn mt-3" href="{% url 'batch_enrollment' %}"
                 role="button" style="
@@ -57,7 +59,7 @@
 
     <!-- Skill Navigator Section -->
     <section id="skill-navigator"
-        class="d-flex flex-column align-items-center justify-content-center bg-dark text-white"
+        class="d-flex flex-column align-items-center justify-content-center  text-white"
         style="height: 120vh; overflow: hidden;">
         <h2 class="mb-3 animate__animated animate__fadeIn">Skill Navigator</h2>
         <p class="text-center animate__animated animate__fadeInUp" style="max-width: 600px;">
@@ -70,16 +72,17 @@
                 data-bs-ride="carousel" style="max-width: 80%;">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://via.placeholder.com/800x400?text=Skill+Navigator" class="d-block w-100"
-                            alt="Skill Tracking">
+                       <img src="https://cdn.elearningindustry.com/wp-content/uploads/2020/02/what-to-check-before-an-online-course-purchase.png"
+                        class="d-block w-100" alt="Skill Tracking">
+
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Track Your Skills</h5>
                             <p>All your skills and achievements, neatly organized in one place.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://via.placeholder.com/800x400?text=Certification+Portfolio"
-                            class="d-block w-100" alt="Career Management">
+                        <img src="https://www.justinmind.com/wp-content/webp-express/webp-images/uploads/2020/01/steps-to-create-inspiring-progress-bars-header.png.webp"
+                        class="d-block w-100" alt="Career Management">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Build a Certification Portfolio</h5>
                             <p>Showcase your learning and achievements with confidence.</p>
@@ -125,7 +128,7 @@
     </section>
 
     <!-- Courses Section -->
-    <section id="courses" class="d-flex flex-column align-items-center justify-content-center bg-primary text-white"
+    <section id="courses" class="d-flex flex-column align-items-center justify-content-center text-white"
         style="height: 130vh; overflow: hidden;">
         <h2 class="mb-3 animate__animated animate__fadeIn">Courses</h2>
         <p class="text-center animate__animated animate__fadeInUp" style="max-width: 600px;">
@@ -184,7 +187,7 @@
 
     <!-- AI Recommender Section -->
     <section id="ai-recommender"
-        class="d-flex flex-column align-items-center justify-content-center bg-secondary text-white position-relative overflow-hidden"
+        class="d-flex flex-column align-items-center justify-content-center  text-white position-relative overflow-hidden"
         style="height: 130vh;">
         <div class="wave-animation"></div>
         <h2 class="mb-3 animate__animated animate__fadeIn">AI Recommender</h2>
@@ -192,8 +195,8 @@
             Get personalized course and skill recommendations based on your goals and performance. Let AI help guide
             your learning path.
         </p>
-        <img src="https://via.placeholder.com/800x400?text=AI+Recommendations"
-            class="img-fluid mt-4 animate__animated animate__zoomIn" alt="AI Recommender">
+        <img src="https://i.imgur.com/oXAsWX3.jpeg"
+            class="img-fluid mt-4 animate_animated animate_zoomIn" alt="AI Recommender">
 
         <div class="recommendation-cards mt-5">
             <div class="card custom-card animate__animated animate__fadeInUp">
@@ -331,6 +334,10 @@
         color: #fff;
     }
 
+    #ai-recommender{
+        background-color: #080606;
+    }
+
     .icon-box:hover {
         transform: translateY(-10px);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -361,7 +368,13 @@
         border-radius: 0 0 10px 10px;
         /* Rounded corners */
     }
+    #skill-navigator{
+        background-color: #74aae4;
+    }
 
+    #courses{
+        background-color: #b6c4df;
+    }
     .custom-card {
         background: rgba(255, 255, 255, 0.1);
         border: 2px solid #007bff;
@@ -394,7 +407,7 @@
 
     /* Batch Allocation Section */
     #batch-allocation {
-        background: linear-gradient(to bottom right, #1c1c1c, #3c3c3c);
+        background: linear-gradient(to bottom right, #4c6fce, #8f65a4);
         color: #ffffff;
     }
 
@@ -469,7 +482,7 @@
     #feedback {
         height: 100vh;
         /* Full height */
-        background: linear-gradient(to bottom right, #007bff, #0056b3);
+        background: linear-gradient(to bottom right, #6f8e71, #5491d3);
         /* Gradient background for depth */
         text-align: center;
         /* Center text alignment */
